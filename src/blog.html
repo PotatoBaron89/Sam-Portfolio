@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Keywords" content="Practice Javascript, Development" />
+    <meta name="Description" content="Just a practice webpage" />
+    <link rel="stylesheet" href="./sass/styles.scss" />
+    <script
+      src="https://kit.fontawesome.com/383fafc4de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sam O'Donnell</title>
+  </head>
+
+  <body>
+    <div class="wrapper-main bg-home">
+      <header>
+        <nav class="menu">
+          <!--  navigation bar  -->
+          <div class=""><i class="fad fa-bars fa-3x"></i></div>
+          <a href="./index.html" aria-label="Link to Home Page"
+            ><i class="fas fa-home fa-2x"></i
+          ></a>
+          <a href="./portfolio.html" aria-label="Link to Portfolio Page"
+            ><i class="fas fa-suitcase fa-2x"></i
+          ></a>
+          <a href="./blog.html" aria-label="Link to Blog Page"
+            ><i class="fas fa-books fa-2x"></i
+          ></a>
+          <a href="./contact.html" aria-label="Link to Contact Page"
+            ><i class="fas fa-phone-rotary fa-2x"></i
+          ></a>
+        </nav>
+        <!--  Main Header Before Content Starts  -->
+        <h1 id="header-main">Blog</h1>
+      </header>
+      <!--  Page Specific Content  -->
+      <main class="f-col-c">
+        <section class="content-box bounce-in-bottom">
+          <a
+            class="f-col-c"
+            href="https://medium.com/@dailyfire/pure-css-parallax-simple-tricks-da102d0ffdb9"
+          >
+            <h2>Pure CSS Parallax</h2>
+            <div class="info">
+              <span class="author">Daily Fire</span>
+              <span class="updated">29 Aug 2018</span>
+            </div>
+            <div class="content">
+              <img src="./img/Blog_Parallax.gif" alt="" />
+              <p>
+                An in-depth guide into integrating CSS only parralax effects.
+                Very well explained with great use of visual aids to help
+                communicate what can be a somewhat confusing topic.
+              </p>
+            </div>
+          </a>
+        </section>
+
+        <article class="content-box bounce-in-bottom">
+          <a
+            class="f-col-c"
+            href="https://css-tricks.com/how-to-animate-a-svg-with-border-image/"
+          >
+            <h2>How to Animate a SVG with border-image</h2>
+            <div class="info">
+              <span class="author">Uri Shaked</span>
+              <span class="updated">4 Dec 2020</span>
+            </div>
+            <div class="content">
+              <p>
+                Here Uri Shaked explorers an interesting effect in which you
+                can, as the title implies, animate the border-image with svgs.
+              </p>
+              <img
+                src="./img/blog__anim-borders.gif"
+                alt="Example of using animated svgs with border-image"
+              />
+              <p>
+                It was another interesting read that helped expand my
+                understanding of what you can do with SVGs within CSS.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="content-box bounce-in-bottom">
+          <a
+            class="f-col-c"
+            href="https://css-tricks.com/exploring-the-css-paint-api-blob-animation/"
+          >
+            <h2>Exploring the CSS Paint API</h2>
+            <div class="info">
+              <span class="author">Temani Aif</span>
+              <span class="updated">Aug 30, 2021</span>
+            </div>
+            <div class="content">
+              <p>
+                In this blog, Temani searches the bleeding edge possibilities of
+                what can be achieved with CSS only, using the Paint API that for
+                now, is only supported by Chrome and Edge.
+              </p>
+              <img
+                src="./img/blog-spiral.gif"
+                alt="Example of using the Paint API"
+              />
+              <p>
+                I personally found it fascinating seeing the interesting
+                possibilities that will be available once these features receive
+                wider support.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="content-box bounce-in-bottom">
+          <a
+            class="f-col-c"
+            href="https://css-tricks.com/stealing-game-animation-techniques-to-engage-users/"
+          >
+            <h2>Stealing Game Animation Techniques to Engage Users</h2>
+            <div class="info">
+              <span class="author">Eli Penner</span>
+              <span class="updated">Aug 25, 2021</span>
+            </div>
+            <div class="content">
+              <p>
+                In this blog, Temani searches the bleeding edge possibilities of
+                what can be achieved with CSS only, using the Paint API that for
+                now, is only supported by Chrome and Edge.
+              </p>
+              <img
+                src="./img/Blog_Game-Techniques.webp"
+                alt="Example of using the Paint API"
+              />
+              <p>
+                I personally found it fascinating seeing the interesting
+                possibilities that will be available once these features receive
+                wider support.
+              </p>
+            </div>
+          </a>
+        </article>
+      </main>
+      <!--  End Page Specific Content Wrapper  -->
+    </div>
+    <!-- end-background-->+
+    <footer>
+      <script async src="./main.js"></script>
+    </footer>
+  </body>
+</html>
