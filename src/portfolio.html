@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta-Data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Keywords" content="Practice Javascript, Development" />
     <meta name="Description" content="Just a practice webpage" />
-    <link rel="stylesheet" href="./sass/styles.scss" />
+    <!-- External Stylesheets -->
     <script
       src="https://kit.fontawesome.com/383fafc4de.js"
       crossorigin="anonymous"
@@ -17,15 +18,18 @@
       rel="stylesheet"
     />
 
-    <title>Sam O'Donnell</title>
+    <title>Sam O'Donnell - Portfolio</title>
+    <!-- Site stylesheet -->
+    <link rel="stylesheet" href="./sass/styles.scss" />
   </head>
 
   <body class="f-col-c">
+    <!-- Primary Wrapper -->
     <div class="wrapper-main bg-home">
       <header>
+        <!-- Top Nav Bar -->
         <nav class="menu">
-          <!--  navigation bar  -->
-
+          <!-- Nav Elements -->
           <a href="./index.html" aria-label="Link to Home Page"
             ><i class="fas fa-home fa-2x"></i
           ></a>
@@ -44,7 +48,8 @@
       </header>
       <!--  Page Specific Content  -->
       <main id="content-wrapper" class="f-col-c">
-        <section class="content-box slide-in-blurred-left">
+        <!--  First Content Card  -->
+        <article class="content-box slide-in-blurred-left">
           <a class="f-col-c" href="#">
             <h2>Featured Project</h2>
             <div class="info">
@@ -73,9 +78,10 @@
               asperiores voluptate temporibus!
             </p>
           </a>
-        </section>
+        </article>
 
-        <article id="test" class="content-box">
+        <!--  Second Content Card  -->
+        <article class="content-box">
           <a class="f-col-c" href="#">
             <h2>Project 2</h2>
             <div class="info">
@@ -99,6 +105,7 @@
           </a>
         </article>
 
+        <!--  Third Content Card  -->
         <article class="content-box">
           <a class="f-col-c" href="#">
             <h2>Project 3</h2>
@@ -124,6 +131,7 @@
           </a>
         </article>
 
+        <!--  Fourth Content Card  -->
         <article class="content-box">
           <a class="f-col-c" href="#">
             <h2>Project 4</h2>
@@ -155,6 +163,7 @@
     <!-- end-background-->
 
     <footer>
+      <!-- Footer Social Nav -->
       <nav class="footer-social-wrapper" aria-label="Social Links">
         <a href="#">
           <i class="fab fa-linkedin-in fa-3x"></i>
@@ -166,8 +175,6 @@
           <i class="fab fa-facebook-f fa-3x"></i>
         </a>
       </nav>
-
-      <script async src="./main.js"></script>
     </footer>
   </body>
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta-Data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Keywords" content="Practice Javascript, Development" />
     <meta name="Description" content="Just a practice webpage" />
-    <link rel="stylesheet" href="./sass/styles.scss" />
+    <!-- External Stylesheets -->
     <script
       src="https://kit.fontawesome.com/383fafc4de.js"
       crossorigin="anonymous"
@@ -17,14 +18,18 @@
       rel="stylesheet"
     />
 
-    <title>Sam O'Donnell</title>
+    <title>Sam O'Donnell - Blog</title>
+    <!-- Site stylesheet -->
+    <link rel="stylesheet" href="./sass/styles.scss" />
   </head>
 
-  <body>
+  <body class="f-col-c">
+    <!-- Primary Wrapper -->
     <div class="wrapper-main bg-home">
       <header>
+        <!-- Top Nav Bar -->
         <nav class="menu">
-          <!--  navigation bar  -->
+          <!-- Nav Elements -->
           <a href="./index.html" aria-label="Link to Home Page"
             ><i class="fas fa-home fa-2x"></i
           ></a>
@@ -38,12 +43,14 @@
             ><i class="fas fa-phone-rotary fa-2x"></i
           ></a>
         </nav>
-        <!--  Main Header Before Content Starts  -->
+
+        <!-- page header -->
         <h1 id="header-main">Blog</h1>
       </header>
       <!--  Page Specific Content  -->
       <main class="f-col-c">
-        <section class="content-box bounce-in-bottom">
+        <!--  First Content Card  -->
+        <article class="content-box slide-in-blurred-left">
           <a
             class="f-col-c"
             href="https://medium.com/@dailyfire/pure-css-parallax-simple-tricks-da102d0ffdb9"
@@ -62,9 +69,10 @@
               </p>
             </div>
           </a>
-        </section>
+        </a>
 
-        <article class="content-box bounce-in-bottom">
+        <!--  Second Content Card  -->
+        <article class="content-box">
           <a
             class="f-col-c"
             href="https://css-tricks.com/how-to-animate-a-svg-with-border-image/"
@@ -91,7 +99,8 @@
           </a>
         </article>
 
-        <article class="content-box bounce-in-bottom">
+        <!--  Third Content Card  -->
+        <article class="content-box">
           <a
             class="f-col-c"
             href="https://css-tricks.com/exploring-the-css-paint-api-blob-animation/"
@@ -120,7 +129,8 @@
           </a>
         </article>
 
-        <article class="content-box bounce-in-bottom">
+        <!--  Fourth Content Card  -->
+        <article class="content-box">
           <a
             class="f-col-c"
             href="https://css-tricks.com/stealing-game-animation-techniques-to-engage-users/"
@@ -151,8 +161,9 @@
       </main>
       <!--  End Page Specific Content Wrapper  -->
     </div>
-    <!-- end-background-->+
+    <!-- end-background-->
     <footer>
+      <!-- Footer Social Nav -->
       <nav class="footer-social-wrapper" aria-label="Social Links">
         <a href="#">
           <i class="fab fa-linkedin-in fa-3x"></i>
@@ -164,8 +175,6 @@
           <i class="fab fa-facebook-f fa-3x"></i>
         </a>
       </nav>
-
-      <script async src="./main.js"></script>
     </footer>
   </body>
 </html>

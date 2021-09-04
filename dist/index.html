@@ -1,113 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Keywords" content="Practice Javascript, Development" />
-    <meta name="Description" content="Just a practice webpage" />
-    <link
-      rel="stylesheet"
-      href="/index.2826f64c.css"
-      integrity="sha384-40LSmARxps5id/j0wHus8VKdjpPv4X5y6dJ5MFn92muH/t1NgJizzUJYd0g6RKcO"
-    />
-    <script
-      src="https://kit.fontawesome.com/383fafc4de.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Meta-Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Practice Javascript, Development">
+    <meta name="Description" content="Just a practice webpage">
+    <!-- External Stylesheets -->
+    <script src="https://kit.fontawesome.com/383fafc4de.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <title>Sam O'Donnell</title>
+    <!-- Site stylesheet -->
+    <link rel="stylesheet" href="/index.2826f64c.css">
   </head>
 
   <body class="f-col-c">
+    <!-- Primary Wrapper -->
     <div class="wrapper-main bg-home">
       <header>
+        <!-- Top Nav Bar -->
         <nav class="menu">
-          <!--  navigation bar  -->
-
-          <a href="/index.html" aria-label="Link to Home Page"
-            ><i class="fas fa-home fa-2x"></i
-          ></a>
-          <a href="/portfolio.html" aria-label="Link to Portfolio Page"
-            ><i class="fas fa-suitcase fa-2x"></i
-          ></a>
-          <a href="/blog.html" aria-label="Link to Blog Page"
-            ><i class="fas fa-books fa-2x"></i
-          ></a>
-          <a href="/contact.html" aria-label="Link to Contact Page"
-            ><i class="fas fa-phone-rotary fa-2x"></i
-          ></a>
+          <!-- Nav Elements -->
+          <a href="/index.html" aria-label="Link to Home Page"><i class="fas fa-home fa-2x"></i></a>
+          <a href="/portfolio.html" aria-label="Link to Portfolio Page"><i class="fas fa-suitcase fa-2x"></i></a>
+          <a href="/blog.html" aria-label="Link to Blog Page"><i class="fas fa-books fa-2x"></i></a>
+          <a href="/contact.html" aria-label="Link to Contact Page"><i class="fas fa-phone-rotary fa-2x"></i></a>
         </nav>
 
-        <!-- TODO: chance this svg -->
         <!-- page header -->
-        <h1>Sam O'Donnell</h1>
+        <h1 id="header-main">Sam O'Donnell</h1>
       </header>
-
+      <!--  Page Specific Content  -->
       <main id="content-wrapper">
-        <section class="content-box">
+        <!--  First Content Card  -->
+        <article class="content-box slide-in-blurred-left">
           <h2>{ isLookingForWork : True }</h2>
           <nav class="social p-flex-c">
-            <a href="#" aria-label="Link to my Facebook"
-              ><i class="fab fa-facebook-square fa-4x"></i
-            ></a>
-            <a href="#" aria-label="Link to my Linked in"
-              ><i class="fab fa-linkedin fa-4x"></i
-            ></a>
-            <a href="#" aria-label="Link to my email address"
-              ><i class="far fa-mailbox fa-4x"></i
-            ></a>
+            <a href="#" aria-label="Link to my Facebook"><i class="fab fa-facebook-square fa-4x"></i></a>
+            <a href="#" aria-label="Link to my Linked in"><i class="fab fa-linkedin fa-4x"></i></a>
+            <a href="#" aria-label="Link to my email address"><i class="far fa-mailbox fa-4x"></i></a>
           </nav>
           <h2>Salutations</h2>
           <div class="content">
-            <p>
+            <p class="text-left">
               Welcome to my corner of the internet, my name is Sam. I’m
               reasonably new to the world of coding but I am passionate about
               coding and thrive on trying to push the limits of what I am
               capable of doing.
             </p>
-            <p>
+            <p class="text-right">
               Don’t hesitate to send me a message if you have any queries, I
               look forward to hearing from you :)
             </p>
             <h2>About Me</h2>
-            <img
-              src="/gunship.c655dc9d.jpg"
-              alt="Image of Gunship (band) logo"
-            />
-            <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et
-              Malorum” (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, “Lorem
-              ipsum dolor sit amet..”, comes from a line in section 1.10.32.
+            <p class="text-left">
+              I love programming, how you are constantly learning and
+              discovering new things, frequently having to engage your mind to
+              solve problems. Give me that over a rote job any day.
             </p>
+            <img src="/gunship.c655dc9d.jpg" alt="Image of Gunship (band) logo">
+            <p class="text-right">
+              My favourite band is Gunship, what's not to love about some
+              retro-wave music ;-) I love a good book, my author of choice has
+              to be Brandon Sanderson. If you've never read one of his books,
+              Final Empire would definitely be my first suggestion.
+            </p>
+            <img src="/about_me_book.ecd8fef9.jpg" alt="Book Cover: Rhythm of War By Brandon Sanderson">
           </div>
-        </section>
-
+        </article>
+        <!--  Second Content Card  -->
         <section class="featured">
+          <h2 id="featured-content" class="f-col-c">
+            - - - Featured Content - - -
+          </h2>
           <article id="featured-1" class="content-box">
             <h2>Featured Projects</h2>
+            <div class="info">
+              <span class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>React</span>
+              </span>
+              <!--  End Tags  -->
+              <span class="updated">31 Feb 2022</span>
+            </div>
             <div class="content">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
                 nemo tempore vero?
               </p>
-              <img src="/temp1.cfe02a8b.jpg" alt="Placeholder image" />
+              <img src="/temp1.cfe02a8b.jpg" alt="Placeholder image">
             </div>
           </article>
+
+          <!--  Third Content Card  -->
           <article id="featured-2" class="content-box">
             <h2>Featured Blog: Pure CSS Parallax</h2>
             <div class="info">
@@ -115,7 +105,7 @@
               <span class="updated">29 Aug 2018</span>
             </div>
             <div class="content">
-              <img src="/Blog_Parallax.e79a1604.gif" alt="" />
+              <img src="/Blog_Parallax.e79a1604.gif" alt="">
               <p>
                 An in-depth guide into integrating CSS only parralax effects.
                 Very well explained with great use of visual aids to help
@@ -130,6 +120,7 @@
     </div>
     <!-- end-background-->
     <footer>
+      <!-- Footer Social Nav -->
       <nav class="footer-social-wrapper" aria-label="Social Links">
         <a href="#">
           <i class="fab fa-linkedin-in fa-3x"></i>
@@ -141,8 +132,6 @@
           <i class="fab fa-facebook-f fa-3x"></i>
         </a>
       </nav>
-
-      <script async="" src="/contact.fef1cfaf.js"></script>
     </footer>
   </body>
 </html>
