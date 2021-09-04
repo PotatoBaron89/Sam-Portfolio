@@ -53,8 +53,8 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
-ul[role=list],
-ol[role=list] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -95,6 +95,15 @@ select {
   font: inherit;
 }
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 
 @media (prefers-reduced-motion: reduce) {
@@ -103,8 +112,8 @@ select {
   }
 
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -130,7 +139,8 @@ select {
   align-items: center;
 }
 
-.social-item > span, .social-item > a {
+.social-item > span,
+.social-item > a {
   display: inline-flex;
 }
 
@@ -140,26 +150,10 @@ select {
     flex-direction: row;
     align-items: center;
   }
-  .social-item > span, .social-item > a {
+  .social-item > span,
+  .social-item > a {
     display: inline-flex;
   }
-}
-
-.bg-home::before {
-  content: "";
-  background: url("bg-main.f55a7f90.jpg") no-repeat center center;
-  min-height: 105vh;
-  background-size: cover;
-  filter: blur(5px);
-  position: fixed;
-  z-index: -99;
-  inset: 0;
-  -webkit-animation: kenburns-top 5s ease-out both;
-  animation: kenburns-top 5s ease-out both;
-}
-
-.bg-home {
-  min-height: 93vh;
 }
 
 #salutations,
@@ -214,13 +208,15 @@ select {
     align-items: center;
     align-content: center;
   }
-  .info .tags, .info .updated {
+  .info .tags,
+  .info .updated {
     display: block;
   }
 }
 
 .slide-in-blurred-left {
-  -webkit-animation: slide-in-blurred-left 0.7s cubic-bezier(0.23, 1, 0.32, 1) both;
+  -webkit-animation: slide-in-blurred-left 0.7s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
   animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
@@ -418,6 +414,13 @@ select {
   filter: blur(5px);
   position: fixed;
   z-index: -99;
+  inset: 0;
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both;
+}
+
+.bg-home {
+  min-height: 93vh;
 }
 
 .menu {
@@ -500,7 +503,8 @@ h1 {
   padding-bottom: 2rem;
 }
 
-.content-box .content > p, .content-box .content > img {
+.content-box .content > p,
+.content-box .content > img {
   width: 85%;
 }
 
@@ -571,16 +575,6 @@ h1 {
 .footer-social-wrapper > a:nth-child(3) {
   animation: heartbeat 6s ease-in-out 6s infinite both;
   -webkit-animation: heartbeat 6s ease-in-out 6s infinite;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  overflow-x: hidden;
 }
 
 body {

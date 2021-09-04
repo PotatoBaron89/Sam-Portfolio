@@ -1,28 +1,34 @@
+//  Util for setting flex-center-center
 .p-flex-c {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+//  Util for setting flex-column-center
 .f-col-c {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+//  Util for using margin auto to center
 .margin-c {
   margin: auto auto;
   width: 100%;
 }
 
+//  Util for creating large margin top
 .margin-l {
   margin-top: 15vh;
 }
 
+//  Util for left aligning text
 .text-left {
   text-align: left;
 }
 
+//  Util for right aligning text
 .text-right {
   text-align: right;
 }
@@ -85,6 +91,16 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+//  Padding Resets
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  overflow-x: hidden;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

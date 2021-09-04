@@ -1,5 +1,6 @@
 @import "./src/sass/abstracts.scss";
 
+//  Style: Background, in psuedo-element to prevent blur effecting child elements
 .bg-home::before {
   content: "";
   background: url("../img/bg-main.jpg") no-repeat center center;
@@ -8,8 +9,15 @@
   filter: blur(5px);
   position: fixed;
   z-index: -99;
+  inset: 0;
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both;
 }
-
+// Set min height so footer doesn't appear half way up the screen when there isn't much content.
+.bg-home {
+  min-height: 93vh;
+}
+//  Style: Nav-Bar Top
 .menu {
   display: flex;
   justify-content: center;
@@ -21,11 +29,11 @@
   top: -25px;
   z-index: 99;
   margin-top: $padding-mobile;
-
+  //  Style: Hovering over link
   & > a:hover {
     color: yellow;
   }
-
+  //  Style: Creating background that spans 100% without blocking flow
   &::before {
     content: "";
     display: block;
@@ -38,12 +46,12 @@
     filter: blur(3px);
   }
 }
-
+//  Specific Styling for header main
 #header-main {
   margin: 10vh auto;
   max-width: 680px;
 }
-
+//  Style: Main Headers
 h1 {
   font-family: $font-press-start;
   color: white;
@@ -52,7 +60,7 @@ h1 {
   margin: 1rem 0 0 0;
   text-align: center;
 }
-
+//  Style: Creating style for content wrapper
 #content-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -64,7 +72,7 @@ h1 {
   margin: 0 min(3rem, 4vw);
   gap: 1rem;
 }
-
+//  Style: Creating style for content-box, child to content-wrapper
 .content-box {
   margin: 1rem min(2rem, 4vw);
   display: flex;
@@ -76,30 +84,30 @@ h1 {
   max-width: 610px;
   background: rgba(255, 255, 255, 0.83);
   border-radius: 10px;
-
+  //  Style: H2 Children of content box
   h2 {
     margin: 1rem 0;
     color: #757575;
   }
-
+  //  Style: specific styling to .content that is childed to content-box
   & .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
-
+    //  Style: Set max width to paragraphs and images relative to parent.
     & > p,
     & > img {
       width: 85%;
     }
   }
-
+  //  Style: Base styling to images
   img {
     max-width: 95%;
     margin: 0.5rem 0 0.5rem 0;
   }
-
+  //  Style: Base styling to paragraphs
   p {
     margin: 0 1.75rem 0.5rem 1.75rem;
     line-height: 2.05rem;
@@ -110,7 +118,7 @@ h1 {
     text-decoration: none;
   }
 }
-
+//  Style: Base styling to font-awesome content
 .fas,
 .fab,
 .far,
@@ -119,7 +127,7 @@ h1 {
   color: #0062ff;
   overflow: hidden;
 }
-
+//  Media: To make content display better on smaller screens
 @media screen and (max-width: 460px) {
   p {
     display: flex;
@@ -137,7 +145,7 @@ h1 {
     margin: 0 0 2rem 0;
   }
 }
-
+//  Style: Base styling to footer section
 .footer-social-wrapper {
   background: black;
   width: 100vw;
@@ -146,11 +154,11 @@ h1 {
   gap: 3rem;
   justify-content: center;
   bottom: 0;
-
+  //  Style: create hover effect on the icons specifically
   & > a > i:hover {
     color: yellow;
   }
-
+  //  Anim: Nth-child to create staggered animation
   & > a:nth-child(1) {
     animation: heartbeat 6s ease-in-out 2s infinite both;
     -webkit-animation: heartbeat 6s ease-in-out 2s infinite;

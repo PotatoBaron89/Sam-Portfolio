@@ -1,3 +1,5 @@
+//  Import Assets from other CSS files
+
 @import "./src/sass/abstracts.scss";
 @import "./src/sass/_utilities.scss";
 @import "./src/sass/pages/_blog.scss";
@@ -6,16 +8,6 @@
 @import "./src/sass/pages/_portfolio.scss";
 @import "./src/sass/_animations.scss";
 @import "./src/sass/components.scss";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  overflow-x: hidden;
-}
 
 body {
   background: black;
